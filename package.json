@@ -1,0 +1,40 @@
+{
+  "name": "Posteon",
+  "description": " ",
+  "version": "0.1.1",
+  "keywords": [
+    "mailer",
+    "api",
+    "mandrill",
+    "sendgrid",
+    "postmark",
+    "mailjet",
+    "smtp"
+  ],
+  "bugs": {
+    "url": "https://github.com/DigitalRockers/posteon/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Gianluca Pengo",
+    "url": "https://github.com/gian788/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DigitalRockers/posteon"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "lodash": "~4.7.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha ./lib/**/*.test.js ./test/**/*.test.js"
+  }
+}
