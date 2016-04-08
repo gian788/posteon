@@ -1,18 +1,22 @@
 
-#Mailer
-[![NPM version](http://img.shields.io/npm/v/mailer.svg)](https://www.npmjs.org/package/mailer)
+#Posteon
+[![NPM version](http://img.shields.io/npm/v/posteon.svg)](https://www.npmjs.org/package/posteon)
+
+** Pre-alpha version **
 
 Description
+
+A provider indipendent email module, based on mongoDB.
 
 This software is released under the MIT license. See `LICENSE` for more details
 
 ## Supported providers
 * [Mandrill](https://mandrillapp.com/api/docs/)
 * [Sendgrid](https://sendgrid.com/docs/API_Reference/index.html)
-* [PostMark](http://developer.postmarkapp.com/) @TODO
-* [Mailgun](https://documentation.mailgun.com/api_reference.html) @TODO
-* [MailJet](http://dev.mailjet.com/guides/#about-the-mailjet-restful-api) @TODO
-* [SMTP]() @TODO
+* [PostMark](http://developer.postmarkapp.com/)
+* [Mailgun](https://documentation.mailgun.com/api_reference.html)
+* [MailJet](http://dev.mailjet.com/guides/#about-the-mailjet-restful-api)
+* [SMTP]() 
 
 ## Download and Installation
 
