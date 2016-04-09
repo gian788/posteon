@@ -1,18 +1,20 @@
 var should = require('should');
 
-var mailer = require('../lib/index');
+var posteon = require('../lib/index');
 var config = require('./config');
 var fakeProvider = require('./fakeProvider');
+var queue = require('../lib/queue');
+var QueueElement = queue.Model;
 
-describe('Mailer test', function() {
-	//this.timeout(1000);
+describe('Posteon test', function() {
+	//@TODO: clean db
 
-	it('Send test (Mandrill)', function(done) {
-		mailer.init(config);
+	it('Send test', function(done) {
+		posteon.init(config);
 		var fakeProviderInstance = fakeProvider();
-		mailer.addProvider(fakeProviderInstance);
+		posteon.addProvider(fakeProviderInstance);
 
-		mailer.send(
+		posteon.send(
       {
         name: fakeProviderInstance.name,
       },

@@ -2,7 +2,7 @@ module.exports = {
 	dbs: {
 		mongoDB: {
 			uri: 'mongodb://localhost/mailer-dev',
-			debug: true,
+			debug: false,
 			options: {},
 		},
 	},
