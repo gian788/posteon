@@ -30,7 +30,7 @@
     "mocha": "*",
     "should": "*"
   },
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "mocha ./lib/**/*.test.js ./test/**/*.test.js"
   },
