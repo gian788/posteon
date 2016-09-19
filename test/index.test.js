@@ -3,8 +3,7 @@ var should = require('should');
 var posteon = require('../lib/index');
 var config = require('./config');
 var fakeProvider = require('./fakeProvider');
-var queue = require('../lib/queue');
-var QueueElement = queue.Model;
+
 
 describe('Posteon test', function() {
 	//@TODO: clean db
@@ -20,21 +19,21 @@ describe('Posteon test', function() {
       },
       {
         to: [{name: 'Gianluca', email: 'gianluca.pengo@gmail.com'}],
-        from: {name: 'Kademy', email: 'noreply@kademy.it'},
-        subject: 'Test send (Mandrill)',
-        html: '<h1>Test send (Mandrill)</h1><p>Test body</p>',
+        from: {name: 'Posteon', email: 'posteon@test.com'},
+        subject: 'Test send',
+        html: '<h1>Test send header</h1><p>Test body</p>',
         //text: 'text',
-      	//attachments: 'attachments',
+				//attachments: 'attachments',
         //images: 'images',
-      	//tags: 'tags',
+				//tags: 'tags',
         //headers: 'headers',
         //metadata: 'metadata',
       },
       function(err, res){
-  			should.not.exist(err);
+				should.not.exist(err);
         res.should.be.instanceof(Object);
         res.should.have.property('status').equal('queued');
 				done();
-  		});
+			});
 	});
 });
